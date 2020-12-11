@@ -1,5 +1,3 @@
-console.log("This is the JS file");
-
 const weartherForm = document.querySelector("form");
 const search = document.querySelector("input");
 const messageOne = document.querySelector("#loader");
