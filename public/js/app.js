@@ -11,6 +11,7 @@ weartherForm.addEventListener("submit", (e) => {
 
   fetch(`http://localhost:4000/weather?address=${location}`).then(
     (response) => {
+      console.log(response)
       response.json().then((data) => {
         messageOne.textContent = "";
         if (data.error) {
