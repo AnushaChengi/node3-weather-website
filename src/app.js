@@ -8,6 +8,7 @@ const forecast = require("./utils/forecast");
 const geocode = require("./utils/geocode");
 
 const app = express();
+const port = process.env.PORT || 4000
 
 // //directory and file path respectively
 // console.log(__dirname);
@@ -100,6 +101,6 @@ app.get("*", (req, res) => {
   });
 });
 
-app.listen(4000, () => {
-  console.log("My Server is up! YAAy");
+app.listen(port, () => {
+  console.log(`My Server is up on ${port}`);
 });
